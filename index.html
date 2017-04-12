@@ -1,0 +1,2297 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <meta charset="utf-8" />
+		<title>JAWHAR APPs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link href="code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet"
+            type="text/css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+         <link href="css/nativedroid2.color.deep-purple.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <style type="text/css">
+    .avatar1{
+      display: inline-block; 
+      height: 90px; 
+      width: 90px; 
+      border-radius: 50%; 
+      line-height: 54px; 
+      font-size: 20px; 
+      color: #666; 
+      text-align: center;
+      }
+
+      .avatar2{
+      display: inline-block; 
+      height: 50px; 
+      width: 50px; 
+      border-radius: 50%; 
+      line-height: 14px; 
+      font-size: 15px; 
+      color: #666; 
+      text-align: center;
+      }
+      
+
+      .item {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .paper-toolbar-0{
+              background-color: #C5216D;
+          }
+          
+     .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+            background-color: #f9f9f9;
+            border-color: #bbb;
+            color: #333;
+            text-shadow: 0 0px 0;
+        }    
+      </style>
+
+      <style>
+		/* Prevent FOUC */
+		body { opacity: 0; }
+		.ui-page-theme-a .ui-btn.ui-btn-raised.clr-primary {
+            background-color: rgb(2, 119, 175);
+		}
+		.ui-collapsible-set .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn {
+        border-top-width: 1px;
+        font-size: 14px;
+        white-space:normal;
+		}
+		.ui-collapsible.ui-collapsible-collapsed, .ui-page-theme-a .ui-body-inherit.ui-collapsible-content, .ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a {
+            background-color: transparent;
+        }
+        .ui-listview > li h1, .ui-listview > li h2, .ui-listview > li h3, .ui-listview > li h4, .ui-listview > li h5, .ui-listview > li h6, .ui-listview > li p {
+            white-space: normal;
+        }
+        .ui-listview > li p {
+            font-size: 13px;
+            white-space: normal;
+        }
+        
+        .ui-listview > li h2 {
+            white-space: normal;
+        }
+	</style>
+
+    <style>
+		/* Prevent FOUC */
+		body { opacity: 0; }
+		.ui-page-theme-a .ui-btn.ui-btn-raised.clr-primary {
+            background-color: Teal;
+		}
+					
+		.nd2-card .card-supporting-text {                      
+            font-size: 14px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .error {
+            color:red;
+        }
+	</style>
+	</head>
+	<body >    
+
+<div id="home" data-role="page" class="nd2-no-menu-swipe" style="background-image:url('img/proj/bg1.png')" style="text-align:center">
+         <div class="ui-grid-solo" style="height: 100%">
+        <div style="text-align:center" class="ui-block-a" style="height: 100%">
+        <img style="width: 100%" src="img/proj/jawharBanner.png" is="image">
+        </div>
+    </div>
+	<div role="main" class="ui-content" data-inset="false">
+				    <img style="width: 100%;" src="img/proj/jawhar_n.png" is="image">
+
+    <br />
+
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#khairat" data-ajax='false' data-icon="false" data-transition="pop" style="text-decoration:none" class="wow fadeIn"  data-wow-delay='0.4s'>
+            <div is="icon" style="width: 85px; height: 90px; position: relative">
+                <span class="ui-li-count" style="position: absolute; display: none; z-index: 1; right: 0;
+                    top: 6px;"></span>
+                        <img src="img/proj/sedekah.jpg" is="image" class="avatar1"
+                            id="Img1">
+                           
+                <div style="text-align: center;">
+                    e-Khairat</div>
+            </div>
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#iumrah" data-ajax='false' data-icon="false" data-transition="pop" style="text-decoration:none" class="wow fadeIn"  data-wow-delay='0.8s'>
+            <div is="icon" style="width: 85px; height: 90px; position: relative">
+                        
+                <span class="ui-li-count" style="position: absolute; display: none; z-index: 1; right: 0;
+                    top: 6px;"></span>
+                        <img src="img/proj/kaabah.jpg" is="image" class="avatar1" id="Img2">
+                            
+                <div style="text-align: center;">
+                    i-Umrah</div>
+            </div>
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#iwakaf" data-transition="pop" style="text-decoration:none" data-ajax='false' data-icon="false"  class="wow fadeIn"  data-wow-delay='1.2s'>
+                 <div is="icon" style="width: 85px; height: 90px; position: relative">
+                        
+                    <span class="ui-li-count" style="position: absolute; display: none; z-index: 1; right: 0;
+                    top: 6px;"></span>
+                        <img src="img/proj/wakaf_logo_211px.jpg" is="image" class="avatar1"
+                            id="Img3">
+                            
+                <div style="text-align: center;">
+                    iWakaf</div>
+                    
+                    </div></a>
+        </div>
+    </div>
+            
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4">
+                <a href="#jurnal" data-transition="pop" style="text-decoration:none" data-ajax='false' data-icon="false" class="wow fadeIn"  data-wow-delay='1.6s'>
+                           <div is="icon" style="width: 85px; height: 90px; position: relative">
+                        
+                <span class="ui-li-count" style="position: absolute; display: none; z-index: 1; right: 0;
+                    top: 6px;"></span>
+                            <img src="img/proj/jurnal.jpg" is="image" class="avatar1"
+                                id="Img4">
+                                
+                    <div style="text-align: center;">
+                        Jurnal</div>
+                        </div></a>
+        </div>
+        <div class="col-xs-4">
+        <a href="#tesis" data-transition="pop" style="text-decoration:none" data-ajax='false' data-icon="false"  class="wow fadeIn"  data-wow-delay='2.2s'>
+                        <div is="icon" style="width: 85px; height: 90px; position: relative">
+                        
+                <span class="ui-li-count" style="position: absolute; display: none; z-index: 1; right: 0;
+                    top: 6px;"></span>
+                        <img src="img/proj/tesis.jpg" is="image" class="avatar1"
+                            id="Img5">
+                            
+                <div style="text-align: center;">
+                    Tesis</div>
+                    </div>
+                    </a>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+            
+          
+	</div>
+
+</div>
+        
+<!--page khairat-->
+<div data-role="page" id="khairat" class="nd2-no-menu-swipe" style="background-color: #F4F3F3;">
+    <div data-role="panel" id="leftpanel1" data-display="overlay" data-position-fixed="true" >
+	    <nd2-include data-src="panel.left.html"></nd2-include>
+    </div>
+
+
+	<div data-role="header" data-position="fixed" class="wow fadeIn">
+		<a href="#leftpanel1" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu"></i></a>
+		<h1 class="wow fadeIn" data-wow-delay='0.4s'>eKhairat</h1>
+
+		<ul data-role="nd2tabs" data-swipe="true" id="khairat_tabs">
+			<li data-tab="carian" data-tab-active="true" class="ui-btn-active">Carian</li>
+			<li data-tab="faq" >FAQ</li>
+			<li data-tab="dalil">Dalil</li>
+			<li data-tab="aduan">Aduan</li>
+		</ul>
+	</div>
+
+	<div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+
+			<div data-role="nd2tab"	data-tab="carian">
+                                       
+									<ul data-role="listview" data-icon="false">
+										<li data-role="list-divider">
+											Carian Pemungut/Organisasi derma
+										</li>
+										<li>
+                                                
+											<!--<label for="name2b">Text Input:</label>-->
+                                            <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Taipkan nama/organisasi...">
+                                            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                                                <legend>Status</legend>
+                                                <input type="radio" name="sts" id="radio-choice-ab" value="semua" checked="checked">
+                                                <label for="radio-choice-ab">Semua</label>
+                                                <input type="radio" name="sts" id="radio-choice-bb" value="aktif">
+                                                <label for="radio-choice-bb">Aktif</label>
+                                                <input type="radio" name="sts" id="radio-choice-cb" value="tamat">
+                                                <label for="radio-choice-cb">Tamat tempoh</label>
+                                                        
+                                            </fieldset>
+										<div class="row">
+                                            <div class="col-xs-6"><button id="btnOrg" class="ui-btn ui-mini ui-btn-raised clr-primary"><i class='zmdi zmdi-search ui-pull-left'></i> Organisasi</button></div>
+                                            <div class="col-xs-6"><button id="btnPemungut" class="ui-btn ui-mini ui-btn-raised clr-primary"><i class="zmdi zmdi-search ui-pull-left"></i> Pemungut</button></div>     
+                                        </div>
+                                        </li>
+                                    </ul>
+                                      
+                                    <ul data-role="listview" data-icon="false" id="searchResult">
+										<li data-role="list-divider">
+									        Senarai carian:
+								        </li>
+                                                								
+									</ul>
+                                            
+
+			</div>
+
+			<div data-role="nd2tab"	data-tab="faq">
+
+
+					<ul data-role="listview" data-icon="false">
+						<li data-role="list-divider">
+							FAQ
+						</li>								
+					</ul>
+                    <hr class="inset" />
+
+                    <div data-role="collapsible-set" data-inset="false">
+                    <div data-role="collapsible" data-inset="false">
+                            <h3> Apakah maksud wang khairat (sedekah/derma)?</h3>
+                            <ul>
+                            <li>Dari segi bahasa khairat bermaksud kebajikan-kebajikan. Dari segi istilah pula bermaksud
+                            sedekah yang dilakukan dalam bentuk wang bagi tujuan kebajikan dan mendekatkan diri
+                            kepada Allah SWT.</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Apakah syarat pemberi sedekah?</h3>
+                                <ul>
+                            <li> Memiliki keahlian secara penuh untuk melakukan tabarru' iaitu: Berakal; Baligh;
+                            Rashid(cerdik); Tidak mempunyai halangan untuk bersedekah</li>
+                            <li>Memiliki barang yang ingin disedekahkan atau menjadi wakil bagi pihak lain yang
+                            ingin bersedekah dengan hartanya.</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Siapakah yang layak menerima wang khairat?</h3>
+                            <ul> <li>Orang yang layak menerima wang khairat ialah seperti fakir miskin, anak-anak yatim,
+                            ibu tunggal, orang kelainan upaya, orang muflis, orang yang ditimpa musibah atau
+                            penyakit.</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Apakah syarat harta yang ingin disedekahkan?</h3>
+                            <ul>
+                            <li> Harta yang dimiliki daripada sumber yang halal serta bukan syubhah; dan</li>
+                                    
+                            <li>Harta yang baik dan bukan sesuatu yang buruk atau tidak disukai.</li>
+                            </ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Bolehkah bersedekah dengan sesuatu yang buruk daripada hartanya seperti perabot-perabot
+                                yang sudah buruk atau baju-baju yang sudah lusuh warnanya?</h3>
+                            <ul>
+                            <li>Hukumnya makruh sebagaimana firman Allah yang bermaksud: "Wahai orang-orang yang
+                            beriman! Belanjakanlah (pada jalan Allah) sebahagian dari hasil usaha kamu yang
+                            baik-baik, dan sebahagian dari apa yang Kami keluarkan dari bumi untuk kamu. Dan
+                            janganlah kamu sengaja memilih yang buruk daripadanya (lalu kamu dermakan atau kamu
+                            jadikan pemberian zakat), padahal kamu sendiri tidak sekali-kali akan mengambil
+                            yang buruk itu (kalau diberikan kepada kamu), kecuali dengan memejamkan mata padanya.
+                            Dan ketahuilah, sesungguhnya Allah Maha Kaya, lagi sentiasa Terpuji." (Surah al-Baqarah,
+                            ayat 267)</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Apakah hikmah bersedekah?</h3>
+                            <ul>
+                            <li>Amalan bersedekah adalah satu tanda kesyukuran kepada Allah SWT atas nikmat harta
+                            yang telah dikurniakan kepada kita. Sedekah dapat menyucikan harta dan diri seseorang
+                            sebagaimana ibadah zakat Sedekah adalah satu bentuk amal ibadah yang dapat menambahkan
+                            kebaikan, menghapuskan dosa, menolak bala, menambahkan rezeki, menyembuhkan penyakit
+                            dan menjauhkan kemurkaan Allah SWT.</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Bolehkah seseorang itu bersedekah kepada kaum kerabatnya atau jirannya?</h3>
+                            <ul><li>Disunatkan bagi seseorang Muslim untuk bersedekah kepada kerabatnya atau jirannya
+                            kerana ianya lebih afdal. Sebagaimana Hadis riwayat al-Tirmizi dan Ibnu Hibban,
+                            yang bermaksud: "Sedekah kepada orang miskin merupakan satu sedekah, manakala kepada
+                            orang yang mempunyai hubungan rahim ( kaum kerabat) adalah dua perkara: Sedekah
+                            dan merapatkan hubungan".</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Bolehkah seseorang Muslim bersedekah kepada bukan Muslim?</h3>
+                            <ul>
+                            <li>Pandangan daripada Mazhab Syafii, harus memberi sedekah yang sukarela kepada bukan
+                            Islam secara mutlak. Sebagaimana firman Allah SWT, (Surah al-Insan, ayat 8), yang
+                            bermaksud : "Mereka juga memberi makan benda-benda makanan yang dihajati dan disukai,
+                            kepada orang miskin dan anak yatim serta orang tawanan (bukan Muslim)."
+                            </li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Bolehkah seseorang itu bersedekah kepada haiwan?</h3>
+                            <ul><li>Sedekah kepada haiwan adalah sesuatu yang dianjurkan oleh syariat Islam.</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Apakah hukum seseorang itu bersedekah dengan keseluruhan hartanya?</h3>
+                            <ul>
+                            <li>Disunatkan bagi sedekah itu dilakukan pada harta yang lebih dari keperluan diri
+                            sendiri dan orang-orang yang di bawah tanggungan. Sekiranya seseorang itu bersedekah
+                            sehingga mengurangkan keperluan orang-orang di bawah tanggungannya, maka dia berdosa.
+                            </li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                                Siapakah pihak yang berautoriti terhadap wang khairat?</h3>
+                            <ul>
+                            <li>Wang khairat termasuk di bawah bidang kuasa Majlis Agama Islam Negeri-negeri (MAIN).
+                            Peruntukan berkenaan dengan wang khairat ada terdapat dalam statut pentadbiran agama
+                            Islam setiap negeri.</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>
+                            Apakah justifikasi pemohon atau pengutip pungutan khairat?</h3>
+                            <ul>
+                            <li>Permohonan bagi mendapatkan kebenaran membuat pungutan khairat hendaklah mana-mana
+                            individu yang mewakili kumpulan orang atau institusi seperti masjid, surau, madrasah,
+                            ma'ahad, sekolah atau pertubuhan. Pemohon sama ada merupakan ahli jawatankuasa tetap,
+                            ahli jawatankuasa penaja atau ahli jawatankuasa pembangunan dilantik mewakili kumpulan
+                            orang atau institusi. Permohonan daripada individu adalah tidak dibenarkan sama
+                            sekali dan sekiranya ada hendaklah disiasat. Pemohon hendaklah Warganegara Malaysia
+                            dan permohonan adalah daripada pemohon dalam mana-mana negeri di Malaysia. iv) Berumur
+                            18 tahun ke atas.</li></ul>
+                        </div>
+                        <div data-role="collapsible" data-inset="false">
+                            <h3>Apakah jenis permohonan yang layak diklasifikasikan sebagai pungutan khairat?</h3>
+                            <ul>
+                            <li>Pembinaan baru - seperti mendirikan masjid, surau, madrasah, ma'ahad, sekolah atau
+                            pertubuhan. </li>
+                            <li>Pembinaan semula - seperti bangunan masjid, surau, madrasah, ma'ahad,
+                            sekolah atau pertubuhan di atas bangunan sedia ada.</li>
+                            <li>Pembaikan - meliputi kerja-kerja
+                            ke atas bangunan sedia ada seperti pembaikan atap, tandas, longkang atau struktur
+                            bangunan. </li>
+                            <li>Penyelenggaraan - seperti menyelenggara bangunan sekolah, perbelanjaan
+                            mengelola sesuatu pertubuhan dan yang berkaitan. </li>
+                            <li>Tabung bencana - seperti bencana
+                            tsunami, tabung mangsa banjir, tanah runtuh dan sebagainya. </li>
+                            <li>Tabung Bantuan Umum
+                            - untuk kemaslahatan umat Islam seperti untuk rakyat Palestin, Syria, Rohingya atau
+                            mana-mana negara. </li>
+                            <li>Projek Amal - oleh persatuan atau pertubuhan atau NGO seperti
+                            bantuan anak yatim, projek membersihkan alam sekitar dan seumpamanya.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+			</div>
+
+			<div data-role="nd2tab"	data-tab="dalil">
+
+
+
+						<!-- Simple Card with Title !-->
+
+						<div class="nd2-card">								
+        					<div class="card-supporting-text has-action">
+								<img src="img/proj/alimran_92.png" alt="AliImran92" width="100%"/>
+                                <h3>Surah Al-Imran: Ayat 92</h3>
+                                Maksudnya: "kamu tidak sekali-kali akan dapat mencapai (hakikat) kebajikan dan kebaktian (yang sempurna) sebelum kamu dermakan sebahagian dari apa yang kamu sayangi. dan sesuatu apa jua yang kamu dermakan maka sesungguhnya Allah mengetahuinya".
+                            </div>
+						</div>
+                        <div class="nd2-card">								
+        					<div class="card-supporting-text has-action">
+								<img src="img/proj/attaubah_75.png" alt="AliImran92" width="100%"/>
+                            <h3>Surah At-taubah: Ayat 75</h3>
+                            Maksudnya: "dan di antara mereka ada yang membuat janji dengan Allah dengan berkata: "Sesungguhnya jika Allah memberi kepada kami dari limpah kurnia Nya, tentulah kami akan bersedekah, dan tentulah kami akan menjadi dari orang-orang yang soleh".
+                            </div>
+						</div>
+                        <div class="nd2-card">								
+        					<div class="card-supporting-text has-action">
+								<img src="img/proj/albaqarah_261.png" alt="AliImran92" width="100%"/>
+                                    <h3>Surah Al-Baqarah: Ayat 261</h3>
+                                    Maksudnya: Perumpamaan orang -orang yang menafkahkan hartanya di jalan Allah adalah serupa dengan sebutir benih yang menumbuhkan tujuh tangkai, pada tiap-tiap tangkai:tumbuh seratus biji. Allah melipat gandakan (ganjaran) bagi siapa yang Dia kehendaki. Dan Allah Maha Luas (kurnia-Nya) lagi Maha Mengetahui.
+                                </div>
+						</div>
+                        <div class="nd2-card">								
+        					<div class="card-supporting-text has-action">
+								<img src="img/proj/albaqarah_264.png" alt="AliImran92" width="100%"/>
+                                <h3>Surah Al-Baqarah: Ayat 264</h3>
+                                Maksudnya: Hai orang-orang yang beriman, janganlah kamu menghilangkan (pahala) sedekahmu dengan menyebut-nyebutnya dan menyakiti (perasaan si penerima), seperti orang yang menafkahkan hartanya karena riya kepada manusia dan dia tidak beriman kepada Allah dan hari kemudian. Maka perumpamaan orang itu seperti batu licin yang di atasnya ada tanah, kemudian batu itu ditimpa hujan lebat, lalu menjadilah dia bersih (tidak bertanah). Mereka tidak menguasai sesuatupun dari apa yang mereka usahakan; dan Allah tidak memberi petunjuk kepada orang-orang yang kafir.
+                                </div>
+						</div>
+                        <div class="nd2-card">								
+        					<div class="card-supporting-text has-action">
+								<h3>Hadis Riwayat: Imam Bukhari dan Imam Muslim</h3>
+                                        Dari Abu Musa Al-Ash`ari yang bermaksud : "Tiap muslim wajib Bersedekah. Para sahabat bertanya, "Bagaimana kalau dia tidak memiliki sesuatu?"Nabi S.A.W. menjawab, "Bekerja dengan keterampilan tangannya untuk kemanfaatan bagi dirinya lalu Bersedekah."Merekabertanya lagi. Bagaimanakalau dia tidak mampu? "Nabi menjawab: "Menolong orang yang memerlukankan yang sedang teraniaya" Mereka bertanya: "Bagaimana kalau dia tidak melakukannya?" Nabi menjawab: "Menyuruh berbua tma'ruf." Mereka bertanya: "Bagaimana kalau dia tidak melakukannya?" Nabi S.A.W. menjawab, "Mencegah diri dari berbuat kejahatan itulah sedekah."
+                                <br/>
+                                Sahih al-Bukhari 6022
+                                        </div>
+						</div>
+
+
+			</div>
+
+			<div data-role="nd2tab"
+						data-tab="aduan">
+
+						<ul data-role="listview" data-icon="false">
+							<li data-role="list-divider">Borang Aduan</li>
+                        </ul>
+							<form id="aduan">		
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                            
+						    <div class="box">						
+										
+                                <label for="textinput-6" class="clr-deep-orange"> Nama Pengadu:</label>
+                                <input type="text" name="namapengadu" id="namapengadu" placeholder="Nama pengadu"
+                                    value="" data-mini="false" class="formaduan">
+                                <label for="textinput-6">
+                                    No Telefon:</label>
+                                <input type="text" name="nophone" id="nophone" placeholder="No yang boleh dihubungi"
+                                    value="" data-mini="false" class="formaduan">
+                                <label for="textinput-6">
+                                    Email:</label>
+                                <input type="text" name="email" id="email" placeholder="Email" value="" data-mini="false" class="formaduan">
+                                <label for="textarea-2">
+                                    Aduan/Komen:</label>
+                                <textarea cols="40" rows="8" name="komen" id="komen" class="formaduan"></textarea>
+                                <div class="row">
+                                    <div class="col-xs-6"><button id="btnAduan" class="ui-btn ui-mini clr-btn-teal">Hantar</button></div>
+                                    <div class="col-xs-6"><button id="btnReset" class="ui-btn ui-mini clr-btn-red">Batal</button></div>     
+                                </div>
+                                       
+                                <div class="output">
+                                </div>
+                                        
+                                </div>
+                                </div>
+									
+                            </form>
+										</div>
+
+        <div data-role="popup" id="khairatDetail">
+
+        <div data-role="header">
+            <h1 class='nd-title' id="pc-1">Maklumat Lanjut</h1>
+        </div>
+
+        <div data-role="content">
+            <p>
+            <div class="card-content" style="font-size:14px">
+                <small><strong>Nama Organisasi :</strong></small><br/>
+                <span id="org"></span>
+                <hr/>
+                <small><strong>No. Fail :</strong></small><br/>
+                <span id="nofail">MAIKS/sasda</span>
+                <hr/>
+                <small><strong>Tujuan :</strong></small><br/>
+                <span id="tujuan">Pembesaran surau Al-Amin</span>
+                <hr/>
+                <small><strong>Alamat :</strong></small><br/>
+                <span id="alamat">No 10 Jalan 8/21</span>
+                <hr/>
+                <small><strong>Negeri :</strong></small><br/>
+                <span id="negeri" >SELANGOR</span>
+                <hr/>
+                <small><strong>Tarikh Mula Kutipan :</strong></small><br/>
+                <span id="tmula">10-Jan-2014</span>
+                <hr/>
+                <small><strong>Tarikh Akhir Kutipan :</strong></small><br/>
+                <span id="ttamat">01-Feb-2016</span>
+                <hr/>
+                <small><strong>Jumlah Kutipan Maksima :</strong></small><br/>
+                <span id="jmmaks">RM10000000.00</span>
+      
+            </div>
+            <hr/>
+            <div class="card-content" style="font-size:14px">
+                       
+                <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h4>Senarai Pemungut</h4>
+				<ol data-role="listview" data-icon="true" id="listpemungut">
+						    
+				</ol>
+                <!--<div id="pemungut">
+                    1.Pemungut 1 (ic:21222-22-222222)<br/>
+                    2.Pemungut 1 (ic:21222-22-222222)
+                    </div>-->
+			</div>		
+                       
+            </div>
+            </p>
+                    
+            <a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true" class="ui-btn clr-btn-teal"><i class='zmdi zmdi-close'></i> Tutup</a>
+                    
+        </div>
+
+    </div>
+              
+	</div>
+
+</div>
+<!--end page khairat-->
+<!--umrah-->
+<div id="iumrah" data-role="page" style="background-color: #F4F3F3;" class="nd2-no-menu-swipe">
+
+	<div data-role="panel" id="leftpanel2" data-display="overlay" data-position-fixed="true" >
+	    <nd2-include data-src="panel.left.html"></nd2-include>
+    </div>
+
+
+	<div data-role="header" data-position="fixed" class="wow fadeIn">
+		<a href="#leftpanel2" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu"></i></a>
+		<h1 class="wow fadeIn" data-wow-delay='0.4s'>iUmrah</h1>
+
+		<ul data-role="nd2tabs" data-swipe="true">
+			<li data-tab="carianUmrah" data-tab-active="true" class="ui-btn-active">Semak Pengelola</li>
+			<li data-tab="info" >Info i-Umrah</li>
+			<!--<li data-tab="dalil">Dalil</li>
+			<li data-tab="aduan">Aduan</li>-->
+		</ul>
+
+	</div>
+
+	<div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+
+			<div data-role="nd2tab"	data-tab="carianUmrah">
+
+
+									<ul data-role="listview" data-icon="false">
+										<li data-role="list-divider">
+											Semakan Pengelola Umrah
+										</li>
+										<li>
+                                                
+											<!--<label for="name2b">Text Input:</label>-->
+                                            <input type="text" name="name2" id="umrahText" value="" data-clear-btn="true" placeholder="Taipkan nama pengelola umrah">
+										<div class="row">
+                                            <div class="col-xs-12"><button id="btnUmrah" class="ui-btn ui-mini ui-btn-raised clr-primary"><i class='zmdi zmdi-search ui-pull-left'></i> Semak</button></div>
+                                                    
+                                        </div>
+                                        </li>
+                                        <li>
+                                                
+                                        </li>
+                                    </ul>
+                                    <ul data-role="listview" data-icon="false" id="searchResultUmrah">
+										<li data-role="list-divider">
+									        Hasil carian:
+								        </li>
+                                                										
+									</ul>
+
+
+			</div>
+
+			<div data-role="nd2tab"	data-tab="info">
+                    <div data-role="collapsibleset">
+                        <div data-role="collapsible">
+                        <h3>Pengenalan</h3>
+                                
+    
+                        <p>
+                            <span style="font-size:12px">i - Umrah ialah sebuah portal yang dibangunkan khas bagi menyalurkan maklumat mengenai agensi-agensi pengelola umrah yang sah sebagai rujukan dan panduan kepada bakal-bakal jemaah umrah negara ini. Secara dasarnya, portal ini menyediakan maklumat-maklumat
+                            seperti berikut:</span>
+                        </p>
+                        <p>
+                            <span style="font-size:12px">Senarai agensi pengelola umrah yang sah bagi menguruskan perjalanan jemaah umrah Malaysia; dan</span>
+                        </p>
+                        <p>
+                            <span style="font-size:12px">Butiran mengenai syarikat pengelola umrah seperti nama syarikat, nombor telefon dan faks.</span>
+                        </p>
+                        <p>
+                            <span style="font-size:12px; font-weight:bold">Senarai ini adalah untuk semakan syarikat yang mempunyai perjanjian dengan muassasah kerajaan Arab Saudi sahaja dan  tertakluk kepada pindaan kedutaan Arab Saudi dari masa ke semasa.</span>
+                        <br />
+                            <span style="font-size:12px; font-weight:bold">Bagi semakan status outbound sila semak dilaman <a href="#" onclick="window.open('http://www.motac.gov.my ', '_system');">www.motac.gov.my</a></span>
+                        </p>
+                        </div>
+                    </div>
+
+                    <div data-role="collapsibleset">
+                        <div data-role="collapsible">
+                        <h3>Objektif</h3>
+                        <p><span style="font-size:12px">i-Umrah diharapkan dapat mencapai objektifnya untuk bertindak sebagai medium bagi menghebahkan maklumat-maklumat yang perlu diketahui oleh masyarakat Islam di negara ini dalam memilih agensi pengelola umrah yang tepat bagi mengelolakan perjalanan
+                            umrah mereka. Peranan portal ini amat penting supaya masyarakat Islam di negara ini tidak lagi menjadi mangsa penipuan pihak-pihak tidak bertanggungjawab di samping menjadi pemangkin ke arah penyampaian perkhidmatan pengelolaan umrah yang berkualiti.</span></p>
+                        </div>
+                </div>
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                    <h3>MKSU</h3>
+                    <p><span style="font-size:12px">Majlis Kawal Selia Umrah (MKSU) merupakan inisiatif Kerajaan yang telah ditubuhkan pada 28 Ogos 2014. Majlis ini diketuai oleh Kementerian Pelancongan dan Kebudayaan Malaysia di bawah Akta Industri Pelancongan 1992 serta dianggotai oleh Jabatan
+                        Wakaf Zakat dan Haji (JAWHAR), Kementerian Perdagangan Dalam Negeri, Koperasi dan Kepenggunaan (KPDNKK), Kementerian Luar Negeri (KLN), Polis Diraja Malaysia (PDRM), Suruhanjaya Syarikat Malaysia (SSM), Suruhanjaya Persaingan Malaysia (MyCC),
+                        Kementerian Pengangkutan (MOT), Suruhanjaya Komunikasi dan Mulitimedia Malaysia (SKMM), Lembaga Tabung Haji (TH), Persatuan Ejen-Ejen Pelancongan dan Pengembaraan Malaysia (MATTA) dan Persatuan Agensi-Agensi Pelancongan dan Pengembaraan Bumiputera
+                        (BUMITRA).</span>
+                    </p>
+                    </div>
+                </div>
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                    <h3>Bagaimankah hendak memilih agensi pengelola umrah</h3>
+                    <span style="font-size:12px">
+                        <p>
+                        Hasrat murni jemaah menunaikan ibadah umrah dapat ditunaikan sekiranya jemaah mengambil langkah-langkah berikut:</p>
+                    <p></p>
+                    <ol>
+                        <li>Memilih pengelola umrah yang diluluskan oleh Majlis Kawal Selia Umrah (MKSU) seperti di senarai.</li>
+                        <li>Membuat kajian perbandingan harga pakej-pakej yang ditawarkan. Kebiasaannya harga berubah mengikut musim dan jenis pakej yang dipilih.</li>
+                        <li>Menyelidik latar belakang agensi; lesen dan permit untuk �outbound� yang sah, pengalaman agensi mengelolakan umrah dan urusan visa yang dikendalikan oleh agensi. Sama ada agensi menguruskan sendiri atau menggunakan khidmat orang tengah.</li>
+                        <li>Mengambil tahu syarikat penerbangan, jenis perjalanan sama ada terus ke Jeddah atau ke Madinah atau jemaah perlu <em>transit</em> dan bermalam di negara lain.</li>
+                        <li>Mengambil tahu tentang hotel penginapan yang disediakan oleh agensi.</li>
+                        <li>Bagaimanakah bayaran dibuat. Sama ada kepada akaun syarikat atau kepada akaun persendirian pengurus agensi atau kepada akaun agen-agen yang dilantik oleh agensi. Pastikan jemaah menyimpan resit pembayaran dan dokumen-dokumen yang dikeluarkan
+                        oleh agensi.</li>
+                        <li>Adakah terdapat bayaran-bayaran tambahan.</li>
+                        <li>Adakah agensi mengenakan syarat-syarat tambahan lain yang tertakluk kepada perubahan dari semasa ke semasa.</li>
+                        <li>Adakah agensi mengadakan kelas bimbingan umrah.</li>
+                        <li>Setelah berpuas hati dengan maklumat-maklumat seperti di atas barulah jemaah boleh membuat pemilihan agensi pengelola umrah.</li>
+                    </ol>
+                    <p></p>
+                        </span>
+                    </div>
+                </div>
+			</div>
+
+					
+        <div data-role="popup" id="umrahDetail">
+
+        <div data-role="header">
+            <h1 class='nd-title' id="H1">Maklumat Lanjut</h1>
+        </div>
+
+        <div data-role="content">
+            <p>
+                   
+            <div class="card-content" style="font-size:14px">
+                <small><strong>Nama Syarikat/Agensi :</strong></small><br/>
+                <span id="nama"></span>
+                <hr/>
+                <small><strong>Alamat :</strong></small><br/>
+                <span id="alamatUmrah"></span>
+                <hr/>
+                <small><strong>No Telefon :</strong></small><br/>
+                <span id="phone"></span>
+                <hr/>
+                <small><strong>No Fax :</strong></small><br/>
+                <span id="fax"></span>
+                <hr/>
+                <small><strong>Website :</strong></small><br/>
+                <span id="website" >SELANGOR</span>
+                <hr/>
+                <small><strong>Catatan :</strong></small><br/>
+                <span id="nota"></span>
+                <hr/>
+                            
+            </div>
+            </p>
+                    
+            <a href="#" data-rel="back" data-role="button" data-inline="true" class="ui-btn ui-btn-raised ui-btn-primary"><i class='zmdi zmdi-close'></i> Tutup</a>
+                    
+        </div>
+
+    </div>
+            
+              
+	</div>
+
+</div>
+<!--end umrah-->
+<!--page iwakaf-->
+<div id="iwakaf" data-role="page" style="background-color: #F4F3F3;" class="nd2-no-menu-swipe">
+
+	<div data-role="panel" id="leftpanel3" data-display="overlay" data-position-fixed="true" >
+	    <nd2-include data-src="panel.left.html"></nd2-include>
+    </div>
+
+
+	<div data-role="header" data-position="fixed" class="wow fadeIn">
+		<a href="#leftpanel3" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu"></i></a>
+		<h1 class="wow fadeIn" data-wow-delay='0.4s'>Projek Wakaf</h1>
+
+		<ul data-role="nd2tabs" data-swipe="true" id="wakaf_tabs">
+			<li data-tab="hotel" data-tab-active="true" class="ui-btn-active">Hotel</li>
+			<li data-tab="asrama">Asrama</li>
+			<li data-tab="lain2">Lain-lain</li>
+					
+		</ul>
+
+	</div>
+
+	<div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+
+			<div data-role="nd2tab"	data-tab="hotel">
+
+                    <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Hotel Grand Puteri </h3>
+						<h5 class="card-subtitle">JAWHAR-MAIDAM</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/puteri1.png">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                    <p><strong>Kemudahan:</strong><br /></p>
+					<p><strong>Alamat:</strong><br />
+                        PT 3981 Jalan Masjid Abidin Bandar Kuala Terengganu, 20100 Kuala Terengganu                          
+                    </p>
+                    <p><strong>No. Telefon:</strong> 09-621 5555</p>
+					</div>
+                    <hr />
+                    <div class="card-action">
+						<div class="row between-xs">
+						<div class="col-xs-2">
+							<div class="box">
+								<a href="https://www.facebook.com/grandputerihotel" class="ui-btn ui-btn-inline ui-btn-fab" target="_blank">
+                        <img src="img/proj/facebook_circle_color-128.png" width="30px"/></a>
+									    
+							</div>
+						</div>
+                        <div class="col-xs-2">
+                            <div class="box">
+                                   
+                        </div>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+
+						</div>
+					</div>
+				</div>
+						
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Hotel The Regency Seri Warisan</h3>
+						<h5 class="card-subtitle">JAWHAR-MAINPk</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/seri_warisan.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                    <p>
+                    <strong>Kemudahan</strong> <br />
+                    Hotel empat tingkat (45 bilik), 
+                    pejabat, 
+                    pejabat pengurusan, 
+                    bilik mesyuarat, 
+                    bilik seminar, surau, dewan banquet dan bilik penginapan (25 unit standard double, 
+                    10 unit standard berkembar dan 10 uniy bilik family).
+                    </p>		
+                    <p><strong>Alamat:</strong><br />
+                    2453, Jalan Convent, 34000 Taiping, Perak Darul Ridzuan
+                    </p>	     
+                    <p><strong>No. Telefon:</strong> 05-805 2312</p>  
+					</div>
+
+				</div>		
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Hotel Klana Beach Resort</h3>
+						<h5 class="card-subtitle">JAWHAR-MAINS</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/klana_pd.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                    <p>
+                    <strong>Kemudahan</strong> <br />
+                    Hotel empat tingkat (87 bilik) dan baitul hilal/balai cerap (dua tingkat), 
+                    tempat letak kereta, kubah, teleskop dan peralatan astronomi.
+                    </p>	
+                    <p>
+                    <strong>Alamat:</strong><br />
+                    Kompleks Baitulhilal, Lot 4506, Batu 8, Jalan Pantai, 71050 Port Dickson, Negeri Sembilan
+                    </p>	   
+                    <p><strong>No. Telefon:</strong> 06-648 7888</p>    
+					</div>
+
+				</div>	
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Hotel Pantai Puteri</h3>
+						<h5 class="card-subtitle">JAWHAR-MAIM</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/hotel_pantai_puteri.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                    <p>
+                    <strong>Kemudahan</strong> <br />
+                    Hotel tujuh tingkat (87 bilik), ruang pentadbiran, bilik mesyuarat, restoran (200 orang), dewan makan staf, 
+                    food & beverages store, pejabat chef, dewan serbaguna (250 orang),dewan seminar (60 orang), 
+                    dewan banquet (150 orang), surau, 4 unit dorm (lelaki  dan perempuan), 2 unit bilik ketua rombongan dan 
+                    2 unit ruang persalinan (lelaki dan perempuan).
+                    </p>
+                    <p>
+                    <strong>Alamat:</strong><br />
+                    Pantai Puteri, Mukim Tanjung Kling, Daerah Melaka Tengah, 76400 Melaka
+                    </p>
+                    <p><strong>No. Telefon:</strong> 06 - 353 5555</p>
+                    <p><strong>Laman Web:</strong> www.pantaiputeri.hotels.net.my</p>
+					</div>
+ 
+				</div>	
+			</div>
+
+			<div data-role="nd2tab"	data-tab="asrama">
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Asrama Anak Yatim Darul Aitam Wal Masakin Sultanah Haminah Binti Hamidun</h3>
+						<h5 class="card-subtitle">Alor Setar, Kedah.</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/asramakedah.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                    <p>
+                    <strong>Kemudahan</strong> <br />
+                    Bilik asrama, pejabat, surau, rumah warden, bilik sakit, bilik air, bilik mesyuarat, dewan makan, bilik wuduk, bilik basuh, bilik pam, bilik seterika dan stor kering.
+					</p>    
+
+                    <p>
+                    <strong>Alamat</strong><br />
+                    </p>
+					</div>
+
+				</div>
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Asrama Pelajar Daerah Besut</h3>
+						<h5 class="card-subtitle">Kg Raja Besut, Terengganu</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/asrama-besut.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                    <p><strong>Kemudahan</strong><br />
+                            
+                    </p>
+
+                    <p><strong>Alamat</strong> <br />
+                            
+                    </p>
+                    </div>
+                </div>
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Asrama Anak Yatim</h3>
+						<h5 class="card-subtitle">Machang, Kelantan</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/anak-yatim-kelantan.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                        <p><strong>Kemudahan</strong><br />
+                            Bilik asrama, rumah warden, ruang serbaguna, bilik air/basuh, surau, dewan makan, bilik wuduk, bilik basuh, bilik seterika dan stor kering.
+                        </p>
+                            <p><strong>Alamat</strong> <br />
+                    </div>
+                </div>
+                       
+			</div>
+
+            <div data-role="nd2tab"	data-tab="lain2">
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg">
+						<h3 class="card-primary-title">Rumah Kedai Mukim Utan Aji</h3>
+						<h5 class="card-subtitle">Kangar, Perlis</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/Mukim_Utan_Aji_Perlis.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                        <p>
+                        <strong>Kemudahan</strong> <br />
+                        8 lot rumah kedai, kelengkapan bekalan air dan elektrik, surau (Boleh menempatkan 50 orang jemaah) dan 
+                        tempat letak kereta.
+                                
+                        </p>
+                        <p><strong>Alamat</strong><br />
+                                
+                        </p>
+                    </div>
+                </div>
+
+                        
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg" />
+						<h3 class="card-primary-title">Kompleks Pendidikan Maahad Al-Mashoor Al-Islam</h3>
+						<h5 class="card-subtitle">Balik Pulau, P.Pinang</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/Kompleks_Al-Mashoor.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                        <p>
+                        <strong>Kemudahan</strong> <br />
+                        Blok akademik dan pentadbiran, asrama lelaki dan perempuan, dewan makan, pondok pengawal, tempat letak kereta berbumbung dan padang permainan (bola sepak, sepak takraw dan bola tampar).
+                        </p>
+
+                        <p><strong>Alamat</strong><br />
+                        </p>
+                            
+                    </div>
+                </div>
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg" />
+						<h3 class="card-primary-title">Ruang Niaga Mukim Ulu Kinta</h3>
+						<h5 class="card-subtitle">Tambun, Perak</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/RuangNiaga_Tambun.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                        <p><strong>Kemudahan</strong> <br />
+                            Blok akademik dan pentadbiran, asrama lelaki dan perempuan, dewan makan, pondok pengawal, tempat letak kereta berbumbung dan padang permainan (bola sepak, sepak takraw dan bola tampar).
+                        </p>
+
+                        <p><strong>Alamat</strong></p>
+                    </div>
+                </div>
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg" />
+						<h3 class="card-primary-title">Pusat Saudara Baru</h3>
+						<h5 class="card-subtitle">Seremban, Negeri Sembilan</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/SaudaraBaru.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                        <p><strong>Kemudahan</strong><br />
+                        Dewan solat utama (boleh memuatkan 500 orang jemaah), dewan serbaguna, dewan makan, bilik mesyuarat, bilik imam, perpustakaan, bilik VIP, bilik wuduk utama (lelaki dan perempuan), bilik persalinan perempuan, 
+                        bilik jenazah, courtyard, kelas fardhu ain (boleh memuatkan80 orang), pejabat, hostel dan kuarters mubaligh.
+                        </p>
+
+                        <p><strong>Alamat</strong> <br /></p>
+                    </div>
+                </div>
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg" />
+						<h3 class="card-primary-title">Rumah Perlindungan Wanita</h3>
+						<h5 class="card-subtitle">Masjid Taman Perling, Mukim Pulai, Johor Bahru</h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/RumahPerlindunganWanita_JB.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                        <p><strong>Kemudahan</strong><br />
+                        Bilik penginapan single (17 unit), bilik penginapan double (5 unit), rumah warden, pejabat, bilik kaunseling, bilik mesyuarat, surau, 
+                        bilik latihan kemahiran, stor, ruang menunggu, tandas, bilik bacaan/istirehat, ruang jemuran, taska, pantry dan ruang makan.
+                        </p>
+
+                        <p><strong>Alamat</strong> <br /></p>
+                    </div>
+                </div>
+
+                <div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="img/proj/wakaf_logo_211px.jpg" />
+						<h3 class="card-primary-title">Pusat Hemodialisis</h3>
+						<h5 class="card-subtitle">Majlis Agama Islam Negeri Johor/h5>
+					</div>
+
+					<div class="card-media">
+						<img src="img/proj/PusatHemodialisis_BatuPahat.jpg">
+					</div>
+
+					<div class="card-supporting-text has-action">
+                        <p><strong>Kemudahan</strong><br />
+                        Ruang dialisis (38 unit katil), bilik doktor, bilik serbaguna, bilik RO water, bilik farmasi, ruang legar, 
+                        tandas, bilik rawatan, bilik dispose, bilik pentadbiran, ruang menunggu, bilik stesen, jururawat, bilik stor, dewan dan dewan jamuan.
+                        </p>
+
+                        <p><strong>Alamat</strong> <br /></p>
+                    </div>
+                </div>
+
+            </div>
+	</div>
+
+</div>
+<!--end iwakaf-->
+
+<!--jurnal-->
+<div id="jurnal" data-role="page" style="background-color: #F4F3F3;" class="nd2-no-menu-swipe">
+
+	<div data-role="panel" id="leftpanel4" data-display="overlay" data-position-fixed="true" >
+	    <nd2-include data-src="panel.left.html"></nd2-include>
+    </div>
+
+
+	<div data-role="header" data-position="fixed">
+		<a href="#leftpanel4" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu"></i></a>
+		<h1>Jurnal</h1>
+	</div>
+
+	<div role="main" class="ui-content" data-inset="false">
+        <ul class="jurnal" data-role="listview" data-inset="false">
+			<li data-role="list-divider">Senarai jurnal terbitan JAWHAR</li>
+		</ul>
+
+
+			<ul class="jurnal" data-role="listview" data-icon="false">
+			<li>
+					<a href='#'>
+					<img src='img/proj/jurnal2014a.JPG' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan JAWHAR Vol 8, No 1, 2014</h2>
+					<p>Pembentang: JAWHAR <br />
+                    Tarikh: 01-12-2014 <br />
+                    Sinopsis: Jurnal Pengurusan JAWHAR Vol 8, No 1, 2014
+                    </p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/jurnal-7.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan JAWHAR, Vol 7</h2>
+					<p>Pembentang: JAWHAR <br />
+                    Tarikh: 27-03-2014 <br />
+                    Sinopsis: Jurnal Pengurusan JAWHAR vol 7
+                    </p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/gold-question-mark.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan Vol. 5, . No. 1, 2011</h2>
+					<p>Pembentang:  <br />
+                    Tarikh: 01-12-2014 <br />
+                    Sinopsis: Jurnal Pengurusan JAWHAR Vol. 5, . No. 1, 2011
+                    </p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/gold-question-mark.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan Vol. 4, . No. 2, 2010</h2>
+					<p>Pembentang:  <br />
+                    Tarikh: 13-05-2011 <br />
+                    Sinopsis: Jurnal Pengurusan JAWHAR Vol. 4, . No. 2, 2010
+                    </p>
+					</a>
+				</li>
+                <li>
+					<a href='#'>
+					<img src='img/proj/gold-question-mark.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan Vol. 4, . No. 1, 2010</h2>
+					<p>Pembentang:  <br />
+                    Tarikh: 01-02-2010 <br />
+                    Sinopsis: Jurnal Pengurusan JAWHAR Vol. 4, . No. 1, 2010
+                    </p>
+					</a>
+				</li>
+                <li>
+					<a href='#'>
+					<img src='img/proj/jurnalvol4no2.JPG' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan Vol. 3, . No. 2, 2009</h2>
+					<p>Pembentang: JAWHAR <br />
+                    Tarikh: 01-02-2010 <br />
+                    Sinopsis: Jurnal Pengurusan Vol.3, No.2, 2009
+                    </p>
+					</a>
+				</li>
+                <li>
+					<a href='#'>
+					<img src='img/proj/jurnalPengurusan.JPG' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan JAWHAR Vol. 2, No. 1, 2008</h2>
+					<p>Pembentang: JAWHAR <br />
+                    Tarikh: 01-02-2010 <br />
+                    Sinopsis: Jurnal Pengurusan Vol.2, No.1, 2008
+                    </p>
+					</a>
+				</li>
+                <li>
+					<a href='#'>
+					<img src='img/proj/jurnal-1.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan JAWHAR Siri : Vol. 1, No. 1, 2007</h2>
+					<p>Pembentang: JAWHAR <br />
+                    Tarikh: 01-02-2010 <br />
+                    Sinopsis: Jurnal Pengurusan Vol.3, No.2, 2009
+                    </p>
+					</a>
+				</li>
+                <li>
+					<a href='#'>
+					<img src='img/proj/jurnal2.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan JAWHAR Vol. 1, No. 2, 2007</h2>
+					<p>Pembentang: JAWHAR <br />
+                    Tarikh: 31-12-20017 <br />
+                    Sinopsis: JURNAL PENGURUSAN JAWHAR Siri : Vol. 1, No. 1, 2007
+                    </p>
+					</a>
+				</li>
+                <li>
+					<a href='#'>
+					<img src='img/proj/junalv3.JPG' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan Vol.3, No.1, 2009</h2>
+					<p>Pembentang:  <br />
+                    Tarikh: 22-12-2009 <br />
+                    Sinopsis:<br /> Islam merupakan cara hidup yang bersifat syumul dan kamil. Manakala pengabdian merupakan fungsi manusia diciptakan oleh Allah S.W.T. Ubudiyyah dalam Islam tidak hanya dilihat dari sudut yang khusus, malah seluruh aktiviti kehidupan insan tidak terlepas daripada pengertian ini. Melalui wahyu pertama, pengenalan terhadap Allah S.W.T. disertakan dengan isyarat pengisian ilmu supaya matlamat penciptaan itu membentuk manusia supaya tunduk dan menghampirkan diri kepada Allah S.W.T. Artikel ini akan cuba mengungkap secara ringkas hasil mahsul negara Islam secara umum, termasuk harta wakaf yang merupakan sebahagian daripada sumber pembiayaan pembangunan terutama dalam bidang pendidikan. Seterusnya aktiviti keilmuan akan diseleksi secara rambang mengikut perkembangan dan kejayaan negara-negara Islam di bawah pelbagai kerajaan yang ada di dalam sejarah Islam, khususnya menyentuh tentang bidang perubatan dan perkhidmatan perubatan. Kesimpulan yang diberikan adalah merupakan rumusan dan sedikit cadangan yang mungkin boleh difikirkan atau dilaksanakan secara berperingkat-peringkat dalam masyarakat kini secara profesional dan operasional.
+                    </p>
+					</a>
+				</li>
+                <li>
+					<a href='#'>
+					<img src='img/proj/jurnalv2.JPG' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Jurnal Pengurusan Vol.2, No.2, 2008</h2>
+					<p>Pembentang: JAWHAR <br />
+                    Tarikh: 22-12-2009 <br />
+                    Sinopsis: <br />Artikel ini bertujuan menjelaskan persoalan maqasid dan hubungannya dengan wakaf. Untuk tujuan itu, artikel ini akan cuba mengupas persoalan apakah yang dimaksudkan dengan maqasid syariah, apakah itu wakaf, apakah objektif pensyariatan wakaf dan apakah faedah memahami objektif pensyariatan wakaf? Kepentingan memahami objektif pensyariatan wakaf bertitik tolak daripada fakta bahawa hukum-hakam berkaitan wakaf asasnya adalah persoalan ijtihad. Oleh sebab itu, memahami objektif pensyariatan wakaf akan dapat membantu para mujtahid menerangkan hukum-hakam berkaitan wakaf dengan mudah.
+                    </p>
+					</a>
+				</li>
+            </ul>
+    </div>
+
+</div>
+<!--end jurnal-->
+
+<!--tesis-->
+<div id="tesis" data-role="page" style="background-color: #F4F3F3;" class="nd2-no-menu-swipe">
+
+	<div data-role="panel" id="leftpanel5" data-display="overlay" data-position-fixed="true" >
+	    <nd2-include data-src="panel.left.html"></nd2-include>
+    </div>
+
+
+	<div data-role="header" data-position="fixed">
+		<a href="#leftpanel5" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu"></i></a>
+		<h1>Tesis</h1>
+	</div>
+
+	<div role="main" class="ui-content" data-inset="false">
+        <ul class="tesis" data-role="listview" data-inset="false">
+			<li data-role="list-divider">Senarai tesis mengikut tahun</li>
+		</ul>
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+			<h3>Tahun: 1999</h3>
+		<ul class="tesis" data-role="listview" data-icon="false">
+				    
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Armiadi Musa Basyah </h2>
+                <p>Tinjauan terhadap Pelaksanaan Peraturan Pemerintah Nombor 28 Thn 1977 tentang Perwakafan Tanah Milik Aceh Indonesia1</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Ahmad Salleh </h2>
+                <p>Pelaburan Zakat di Malaysia: Kajian di Baitulmal Majlis Agama Islam Wilayah Persekutuan (MAIWP)</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Nazaruddin A. Wahid </h2>
+                <p>Agihan & Manfaat Zakat Jasa (Gaji, Pelaburan & Upah Kepakaran) Kajian kes di Propinsi Aceh</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Ahmad Salleh </h2>
+                <p>Pelaburan Zakat di Malaysia: Kajian di Baitulmal Majlis Agama Islam Wilayah Persekutuan (MAIWP)</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Nirwan Nazaruddin </h2>
+                <p>Institusi Zakat & Aplikasi di Indonesia</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Mazanan Bin Haji Yusof, Haji </h2>
+                <p>Bayt Al-Mal dalam Perundangan Islam: Kajian Perbandingan terhadap Sumber Bayt Al-Mal & agihannya di Darussalam & Wilayah Persekutuan</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Dayang Apsah Binsin </h2>
+                <p>Pusaka dalam Masyarakat Islam Bisaya di Sabah: Suatu Perbandingan dengan Pusaka dalam Islam</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Mohd. Zamro Muda </h2>
+                <p>Kedudukan Ashab Al-Furud & Asabah dalam Pembahagian Harta Pusaka</p>
+                </a>
+            </li>
+        <li>
+                <a href='#'>
+                <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                <h2>Noor Hira Binti Haji Noor kaseh, Hajah </h2>
+                <p>Harta pusaka dalam Islam: kajian Khas terhadap Amalan Semasa & Undang-undang di Negeri Brunei Darussalam</p>
+                </a>
+            </li>
+                  
+        </ul>
+        </div>
+			
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2000</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+                <li>
+			            <a href='#'>
+			            <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+			            <h2>Baharuddin Haji Wan Nayang </h2>
+			            <p>Harta Wakaf: Sumber & Pelaksanaan di Negeri Kelantan</p>
+			            </a>
+		            </li>
+		        <li>
+			            <a href='#'>
+			            <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+			            <h2>Yumni Bin Aji Haqqi </h2>
+			            <p>Wang Kertas & Hubungannya dengan Muamalah Riba'</p>
+			            </a>
+		            </li>
+
+            </ul>
+        </div>
+
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2001</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Azmil Kamis </h2>
+					<p>Perbezaan Kadar Zakat Harta: Peranannya dalam Pembangunan Sosio - Ekonomi</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Zakariah @ Zakaria Puteh </h2>
+					<p>Sistem Maklumat Eksekutif : Kajian Kes Lembaga Tabung Haji</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Akmal Abdul Munir </h2>
+					<p>Kompilaso Hukum Islam Indonesia : Suati Penilaian terhadap Buku II tentang Undang-undang Kewarisan</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Arifin Umar </h2>
+					<p>Sedekah & Peranannya dalam menjamin Keharmonian Umat menurut Al-Sunnah</p>
+					</a>
+				</li>
+                        
+
+            </ul>
+        </div>
+            
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2002</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Hisham Sabri </h2>
+						<p>Pengurusan Harta Wakaf di Pulau Pinang</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Mohammad Kamari Hj Taib </h2>
+						<p>Aplikasi Illah terhadap Sumber Zakat Pertanian & Kesan Pelaksanaannya ke atas Individu & Syarikat</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Muhammad akramin Kamarul Zaman </h2>
+						<p>Penerokaan Sumber Zakat Galian: Aplikasi & Kesannya ke atas Individu & Syarikat</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Muhammad Iqbal Bafadhal </h2>
+						<p>Peranan & Kepentingan Badan Amil Zakat, Infak & Sedekah (Bazis) dalam meningkatkan Ekonomi Umat (Kajian di Kota Jambi)</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Mohd Sirajuddin Siswadi Putera Bin Mohamed Shith </h2>
+						<p>Ibadat Haji & Umrah sebagaimana yang dilaksanakan oleh Baginda Rasulullah S.A.W</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Ali Akbar </h2>
+						<p>Sistem Kewarisan di Linkungan Adat Limokoto Kabupaten Kampar Riau Indonesia dilihat dari Perspektif Hukum Islam</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Khairunnisa Ismail </h2>
+						<p>Al-Masalih Al-Mursalah & Hubungkaitnya dengan Ijtihad 'Umar Al-Khattab pada masa Pemerintahn</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Muhammad Faishol Zainudin </h2>
+						<p>Maslahah Mursalah: kajian Fiqh Maliki</p>
+						</a>
+					</li>
+
+            </ul>
+        </div>
+
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2003</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Ahmad Othman </h2>
+						<p>Penilaian Aset dalam Penaksiran Zakat Perniagaan: Amalan di Malaysia</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Nur Azura Sanusi </h2>
+						<p>Cukai Korporat, Zakat & Struktur Modal</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Zainal Mukhtar Hj. Abdullah Sirajuddin, Haji </h2>
+						<p>Sumbangan Lembaga Tabung Haji ke arah Pembangunan Material & Spiritual Penyimpannya</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Noor Lizza Mohamed Said </h2>
+						<p>Kesan Aliran Hijaziyyah & Iraqiyyah terhadap Pandangan Fuqaha' Sunni pada Kes-kes Pengecualian dlam Sistem Pusaka Islam</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Ratna Zuhairah Abdul Halim </h2>
+						<p>Pentadbiran Harta Pusaka Orang-orang Islam di Malaysia: Satu Kajian mengikut akta Pusaka Kecil (Pembahagian) 1955</p>
+						</a>
+					</li>
+
+            </ul>
+        </div>
+
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2004</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Ahmad Othman </h2>
+						<p>Penilaian Aset dalam Penaksiran Zakat Perniagaan: Amalan di Malaysia</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Nur Azura Sanusi </h2>
+						<p>Cukai Korporat, Zakat & Struktur Modal</p>
+						</a>
+					</li><li>
+                    <a href='#'>
+                    <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                    <h2>Sazura Bohari </h2>
+                    <p>Saham Wakaf Johor:Tinjauan dari sudut Pelaksanaan & Permasalahan</p>
+                    </a>
+                </li>
+            <li>
+                    <a href='#'>
+                    <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                    <h2>Khairul Azman Azizan </h2>
+                    <p>Zakat Padi: Masalah Pungutan & Penyelesaiannya di Jabatan Zakat Negeri Kedah</p>
+                    </a>
+                </li>
+            <li>
+                    <a href='#'>
+                    <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                    <h2>Salim, Ahmad Mufti </h2>
+                    <p>Amalan Kutipan & Agihan Zakat di Lembaga Amil Zakat Nasional Pos Keadilan Peduli Ummat (PKPU) Indonesia</p>
+                    </a>
+                </li>
+            <li>
+                    <a href='#'>
+                    <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                    <h2>Tuan Sidek Tuan Muda </h2>
+                    <p>Penerokaan Sumber Zakat Perniagaan: Kesan Aplikasi 'Illah & Pelaksanaan keatas Individu & Syarikat</p>
+                    </a>
+                </li>
+            <li>
+                    <a href='#'>
+                    <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                    <h2>Mohd Shukri Jusoh </h2>
+                    <p>Undang-undang & Pelaksanaan Wasiat Wajibah di beberapa Negara Islam: Kajian Perbandingan</p>
+                    </a>
+                </li>
+            <li>
+                    <a href='#'>
+                    <img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+                    <h2>Zahari Mahad Musa </h2>
+                    <p>Zayd Bin Thabit & Pandangannya dalam Ilmu Fara'id</p>
+                    </a>
+                </li>
+
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Zainal Mukhtar Hj. Abdullah Sirajuddin, Haji </h2>
+						<p>Sumbangan Lembaga Tabung Haji ke arah Pembangunan Material & Spiritual Penyimpannya</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Noor Lizza Mohamed Said </h2>
+						<p>Kesan Aliran Hijaziyyah & Iraqiyyah terhadap Pandangan Fuqaha' Sunni pada Kes-kes Pengecualian dlam Sistem Pusaka Islam</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Ratna Zuhairah Abdul Halim </h2>
+						<p>Pentadbiran Harta Pusaka Orang-orang Islam di Malaysia: Satu Kajian mengikut akta Pusaka Kecil (Pembahagian) 1955</p>
+						</a>
+					</li>
+
+            </ul>
+        </div>
+
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2005</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+                <li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Kamaruddin Abdullah </h2>
+					<p>Model Pengurusan Zakat: Kajian Perbandingan di Nanggroe Aceh Darulsalam & Selangor Darul Ehsan</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Ku Aminah Tuan Ibrahim </h2>
+					<p>Pentadbiran Harta Pusaka Orang Islam: Prosedur Pembahagian & Amalan di Amanah Raya Berhad</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Nabilah Ghani </h2>
+					<p>Abdullah Ibn Mas'ud r.a & Pandangan dalam Ilmu Faraid</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Wan Nadia Wan Endut </h2>
+					<p>Harta Pusaka dalam Islam: Kajian terhadap Amalan Semasa & Undang-undang yang diguna pakai di Daerah Kuala Terengganu</p>
+					</a>
+				</li>
+
+            </ul>
+        </div>
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2006</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+		<li>
+				<a href='#'>
+				<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+				<h2>Emie Sylviana Mohd Zahid </h2>
+				<p>Pembangunan Tanah Wakaf di Pulau Pinang: Kajian Kes 1992 hingga 2002</p>
+				</a>
+			</li>
+		<li>
+				<a href='#'>
+				<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+				<h2>Mohd Syahiran Abdul Latif </h2>
+				<p>Pembangunan Tanah Wakaf di Melaka</p>
+				</a>
+			</li>
+		<li>
+				<a href='#'>
+				<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+				<h2>Sukriah Ismail </h2>
+				<p>Pentadbiran Harta Pusaka Orang Islam di Amanah Raya Berhad: Kajian Kes antara Thn 2000 hingga 2005</p>
+				</a>
+			</li>
+                        
+            </ul>
+        </div>
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2007</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Nor Alhana Abd. Malik </h2>
+						<p>Istidbal Harta Wakaf menurut pandangan Fuqaha & Pelaksanaan di Malaysia</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Siti Salwa Mustapa </h2>
+						<p>Pengurusan & Pembangunan Hartanah Wakaf:kKajian di Terengganu</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Maggangka, Mursalin </h2>
+						<p>Undang - undang Republik Indonesia Nombor 38 Thn 1999 tentang Pengelolaan Zakat: Aplikasinya di Pulau Bertam</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Mardan, Jhonni Ardan </h2>
+						<p>Bank Muamalat Indonesia & Amalan Zakat Perniagaan</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Nurul Nazuha Hazizan </h2>
+						<p>Pembangunan Sumber Manusai melalui Agihan Zakat: Kajian di Pusat Urus Zakat (PUZ) Pulau Pinang</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Shuhana Ngah </h2>
+						<p>Sumber Zakat Pendapatan & Pertanian yang diikhtilaf: Persepsi Masyarakat & Kesan Perluasannya terhadap Pembangunan Ekonomi Ummah</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Nor Azlina Abd. Wahab </h2>
+						<p>Amalan Baitulmal dalam Pengurusan Harta Pusaka Orang Islam di Selangor & Kedah</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Nor Adila Mohd Noor </h2>
+						<p>Teori & Praktis Pentadbiran Harta Wasiat di Mahkamah: Perbandingan antara Undang-undang Islam & Sivil</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Nor Azizah Luthfi Hakim </h2>
+						<p>Amalan Pembahagian Pusaka di Kalangan Masyarakat Islam Kudus Jawa Tengah: Kajian menurut Prespektif Hukum Islam</p>
+						</a>
+					</li>
+				<li>
+						<a href='#'>
+						<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+						<h2>Muhammad Aunnurrochim Mas'ad </h2>
+						<p>Konsep Keuntungan mengikut mengikut Perspektif Sistem Ekonomi</p>
+						</a>
+					</li>
+
+            </ul>
+        </div>
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2008</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Hasniza Harun </h2>
+					<p>Pembangunan Hartanah Wakaf: Perbandingan antara Negeri Kedah & Negeri Johor</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Ahmad Wira </h2>
+					<p>Pola Berzakat Masyarakat & Sistem Pengurusan Zakat oleh lembaga di Sumatera Barat</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Basyiroh Ahmad </h2>
+					<p>Enakmen Wasiat orang Islam (Negeri Selangor) 1999: Satu Kajian menurut Hukum Syarak</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Noor Huda Ismail </h2>
+					<p>Pengurusan & Pentadbiran Harta Pusaka & Wasiat di Kalangan Muslim & Non-Muslim di Malaysia</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Rudy Heryana Suherlan </h2>
+					<p>Perkembangan Pentadbiran Undang-undang Islam di Era Reformasi Indonesia: pelaksanaan Semasa & Perspektif Masa Hadapan</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Djalaluddin, muhammad Mawardi </h2>
+					<p>Al-Maslahah Al-Mursalah & Pembaharuan Hukum islam : Suatu Kajian terhadap beberapa Permasalahan Fiqh</p>
+					</a>
+				</li>
+
+            </ul>
+        </div>
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+				<h3>Tahun: 2009</h3>
+			<ul class="tesis" data-role="listview" data-icon="false">
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Firdaus. Nil </h2>
+					<p>Pengurusan & Pembangunan Wakaf di Sumatera Barat</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Mohd Suhail Abdul Majid </h2>
+					<p>Pengurusan & Pembangunan Wakaf di Kedah</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Dayang Hafizah Awang Basir </h2>
+					<p>Analisa isu-isu Permasalahan Ibadat semasa melaksanakan Ibadat Haji: Penumpuan terhadap Laporan-laporan peringkat Kebangsaan</p>
+					</a>
+				</li>
+			<li>
+					<a href='#'>
+					<img src='img/proj/tesis.jpg' class='ui-thumbnail ui-thumbnail-circular' />
+					<h2>Juariah Hasan </h2>
+					<p>Keadilan dalam Undang - undang Pusaka Islam</p>
+					</a>
+				</li>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!--end tesis-->
+
+<script src="ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="vendor/waves/waves.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="js/nativedroid2.js"></script>
+<script src="nd2settings.js"></script>
+
+<script type="text/javascript">
+        var x = null, y = null, caller = "";
+
+        $(document).on('click', '#btnOrg', function () {
+            caller = 'organisasi';
+            $("#searchResult").empty();
+            var searchTxt = $.trim($("#name2b").val());
+            var sts = $('input:radio[name=sts]:checked').val();
+
+            //alert("status=" + sts);
+
+            $.ajax({
+                type: "POST",
+                //url: "http://suraualamins8bangi.org/jawhar/get_dataN.php",
+                url: "http://intranet.jawhar.gov.my/khairat/mobile/get_dataN.php",
+                data: ({
+                    qryTxt: searchTxt,
+                    status: sts
+                }),
+                cache: true,
+                crossDomain: true,
+                dataType: "json",
+                beforeSend: function () {
+                    $.mobile.loading("show");
+                },
+                complete: function () {
+                    $.mobile.loading("hide");
+                },
+                // success: onSuccess,
+                //error: onError
+                success: function (y) {
+                    //alert("success");
+                    onSuccessNew(y);
+
+                },
+                error: function (request, error) {
+                    alert('Ralat');
+                }
+            });
+
+        });
+
+        function onSuccessNew(result) {
+            if (result.Result == "OK") {
+                var i = 0,
+    count = result.Records.length,
+    theItem,
+    flag = 'img/proj/icon_jawhar.png';
+
+                y = $.parseJSON('[' + result.Records + ']');
+
+                //y = result.Records;
+                $('#searchResult').append('<li data-role="list-divider"> Senarai carian: </li>');
+                for (i = 0; i < count; i++) {
+
+                    switch (y[i].negeri) {
+                        case 'PERLIS':
+                            flag = 'img/proj/per.jpg';
+                            break;
+                        case 'PULAU PINANG':
+                            flag = 'img/proj/pen.jpg';
+                            break;
+                        case 'KEDAH':
+                            flag = 'img/proj/ked.jpg';
+                            break;
+                        case 'PERAK':
+                            flag = 'img/proj/prk.jpg';
+                            break;
+                        case 'SELANGOR':
+                            flag = 'img/proj/sel.jpg';
+                            break;
+                        case 'NEGERI SEMBILAN':
+                            flag = 'img/proj/n9.jpg';
+                            break;
+                        case 'JOHOR':
+                            flag = 'img/proj/jhr.jpg';
+                            break;
+                        case 'PAHANG':
+                            flag = 'img/proj/pah.jpg';
+                            break;
+                        case 'TERENGGANU':
+                            flag = 'img/proj/tgn.jpg';
+                            break;
+                        case 'KELANTAN':
+                            flag = 'img/proj/kel.jpg';
+                            break;
+                        case 'WILAYAH PERSEKUTUAN':
+                            flag = 'img/proj/wp.jpg';
+                            break;
+                        case 'SABAH':
+                            flag = 'img/proj/sab.jpg';
+                            break;
+                        case 'SARAWAK':
+                            flag = 'img/proj/sar.jpg';
+                            break;
+                        case 'MELAKA':
+                            flag = 'img/proj/mel.jpg';
+                            break;
+                    }
+                    theItem = theOrg(y[i].id, y[i].organisasi, y[i].negeri, y[i].no_kebenaran, y[i].sts, flag);
+                    $("#searchResult").append(theItem);
+                }
+                $('#searchResult').listview().listview("refresh");
+            }
+            else {
+                $('#searchResult').append("<li>Organisasi tiada dalam senarai!!</li>");
+            }
+        }
+
+        function theOrg(idx, org, negeri, nofail, sts, flg) {
+
+            var li = '<li id="' + idx + '">';
+            li = li + '<a href="#khairatDetail" style="text-decoration: none;" data-id="' + idx + '" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">';
+            li = li + '<img src="' + flg + '" class="ui-thumbnail ui-thumbnail-circular" />';
+            li = li + '<h3>' + org + '</h3>';
+            li = li + '<p><small>' + negeri + '</small>  || <small>' + nofail + '</small></p>';
+            if (parseInt(sts) < 0) {
+                li = li + '<p><small><span class="clr-red">TAMAT TEMPOH</span></small></p>';
+            } else {
+                li = li + '<p><small><span class="clr-green">AKTIF</span></small></p>';
+            }
+            li = li + '</a>';
+            li = li + '</li>';
+
+            return li;
+        }
+
+        $(document).on('vclick', '#searchResult li a', function () {
+            x = $(this).attr('data-id');
+            //alert("id==" + x);
+            //$.mobile.changePage("#pg-khairat-detail", { transition: "pop", changeHash: false });
+
+            var n, bilpeserta, m;
+            $.each(y, function (i, row) {
+                if (row.id == x) {
+                    //$('#pc-1').attr('heading', row.organisasi);
+                    if (caller == 'organisasi') {
+                        $('#pc-1').html(row.organisasi);
+                    } else {
+                        $('#pc-1').html(row.nama);
+                    }
+
+                    $('#org').html(row.organisasi);
+                    $('#nofail').html(row.no_kebenaran);
+                    $('#tujuan').html(row.tujuan);
+                    $('#alamat').html(row.alamat);
+                    $('#negeri').html(row.negeri);
+                    $('#tmula').html(row.tarikh_mula);
+                    $('#ttamat').html(row.tarikh_tamat);
+                    $('#jmmaks').html('RM' + row.jm_maks);
+
+                    n = 0;
+                    bilpeserta = row[0].length;
+                    m = "";
+                    var f = "";
+                    $('#listpemungut').empty();
+                    for (n = 0; n < bilpeserta; n++) {
+                        f = (n + 1).toString();
+                        var jk = $.parseJSON('[' + row[0][n] + ']');
+                        //m = m + jk[0].nama + '(' + jk[0].no_kp + ')<br/>';
+                        //f + '.' + m;
+                        if (row.nama == jk[0].nama) {
+                            $('#listpemungut').append('<li><a href="#" class="clr-bg-green" data-ajax="false">' + jk[0].nama + '(' + jk[0].no_kp + ')</a></li>');
+                        }
+                        else {
+                            $('#listpemungut').append('<li>' + jk[0].nama + '(' + jk[0].no_kp + ')</li>');
+                        }
+
+                    }
+
+                    //$('#pemungut').html(m);
+                    $('#listpemungut').listview().listview("refresh");
+                }
+            });
+
+        });
+
+
+
+        $(document).on('click', '#btnPemungut', function () {
+            caller = 'pemungut';
+            $("#searchResult").empty();
+            var searchTxt = $.trim($("#name2b").val());
+            var sts = $('input:radio[name=sts]:checked').val();
+
+            $.ajax({
+                type: "POST",
+                //url: "http://suraualamins8bangi.org/jawhar/get_pemungut.php",
+                url: "http://intranet.jawhar.gov.my/khairat/mobile/get_pemungut.php",
+                data: ({
+                    qryTxt: searchTxt,
+                    status: sts
+                }),
+                cache: true,
+                crossDomain: true,
+                dataType: "json",
+                beforeSend: function () {
+                    $.mobile.loading("show");
+                },
+                complete: function () {
+                    $.mobile.loading("hide");
+                },
+                // success: onSuccess,
+                //error: onError
+                success: function (y) {
+                    //alert("success");
+                    onSuccessPemungut(y);
+
+                },
+                error: function (request, error) {
+                    alert(error);
+                }
+            });
+
+        });
+
+        function onSuccessPemungut(result) {
+            if (result.Result == "OK") {
+                var i = 0,
+                    count = result.Records.length,
+                    theItem,
+                    flag = 'img/proj/person.png';
+
+                y = $.parseJSON('[' + result.Records + ']');
+
+                //y = result.Records;
+                for (i = 0; i < count; i++) {
+                    theItem = thePemungut(y[i].id, y[i].organisasi, y[i].nama, y[i].no_kebenaran, y[i].sts, flag);
+                    $("#searchResult").append(theItem);
+                }
+                $('#searchResult').listview().listview("refresh");
+                //$('#searchResult').animate({ scrollTop: 1000 });
+            }
+            else {
+                $('#searchResult').append("<li>Nama tiada dalam senarai!!</li>");
+            }
+        }
+
+        function thePemungut(idx, org, nama, nofail, sts, flg) {
+
+            var li = '<li id="' + idx + '">';
+            li = li + '<a href="#khairatDetail" style="text-decoration: none;" data-id="' + idx + '" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">';
+            li = li + '<img src="' + flg + '" class="ui-thumbnail ui-thumbnail-circular" />';
+            li = li + '<h3>' + nama + '</h3>';
+            li = li + '<p><small>' + org + '</small>  || <small>' + nofail + '</small></p>';
+            if (parseInt(sts) < 0) {
+                li = li + '<p><small><span class="clr-red">TAMAT TEMPOH</span></small></p>';
+            } else {
+                li = li + '<p><small><span class="clr-green">AKTIF</span></small></p>';
+            }
+            li = li + '</a>';
+            li = li + '</li>';
+
+            return li;
+        }
+
+
+        $(document).on('click', '#btnAduan', function () {
+
+            $('#aduan').validate({
+                rules: {
+                    namapengadu: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    komen: {
+                        required: true
+                    }
+                },
+                messages: {
+                    namapengadu: {
+                        required: "Sila masukkan nama pengadu!"
+                    },
+                    email: {
+                        required: "Sila masukkan alamat email!"
+                    },
+                    komen: {
+                        required: "Sila masukkan komen anda!"
+                    }
+                },
+                errorPlacement: function (error, element) {
+                    error.appendTo(element.parent().prev());
+                },
+                submitHandler: function (form) {
+                    //$(':mobile-pagecontainer').pagecontainer('change', '#success', {
+                    //    reload: false
+                    //});
+                    var _nama = $.trim($("#namapengadu").val());
+                    var _notel = $.trim($("#nophone").val());
+                    var _emel = $.trim($("#email").val());
+                    var _teks = $.trim($("#komen").val());
+                    //var sts = $('input:radio[name=sts]:checked').val();
+
+                    $.ajax({
+                        type: "POST",
+                        //url: "http://suraualamins8bangi.org/jawhar/post_aduan.php",
+                        url: "http://intranet.jawhar.gov.my/khairat/mobile/post_aduan.php",
+                        data: ({
+                            nama: _nama,
+                            no_tel: _notel,
+                            emel: _emel,
+                            teks: _teks,
+                            no_kp: ''
+                        }),
+                        cache: true,
+                        crossDomain: true,
+                        dataType: "json",
+                        beforeSend: function () {
+                            $.mobile.loading("show");
+                        },
+                        complete: function () {
+                            $.mobile.loading("hide");
+                        },
+                        // success: onSuccess,
+                        //error: onError
+                        success: function (result) {
+                            if (result.Result == "OK") {
+                                new $.nd2Toast({
+                                    message: "Aduan telah dihantar kepada pihak JAWHAR",
+                                    ttl: 3000
+                                });
+
+                                $('.formaduan').val('');
+                            }
+                            if (result.Result == "ERROR") {
+                                new $.nd2Toast({
+                                    message: "RALAT:Sila hubungi JAWHAR..",
+                                    ttl: 3000
+                                });
+                            }
+
+                        },
+                        error: function (request, error) {
+                            new $.nd2Toast({
+                                message: error,
+                                ttl: 3000
+                            });
+                        }
+                    });
+                    return false;
+                }
+            });
+
+
+        });
+
+        $(document).on('click', '#btnReset', function () {
+            $('.formaduan').val('');
+        });
+
+</script>
+
+<script type="text/javascript">
+    $(document).on('vclick', '.jurnal li a', function () {
+        new $.nd2Toast({
+            message: "Sila lawat www.jawhar.gov.my untuk maklumat lanjut",
+            ttl: 3000
+        });
+    });
+</script>
+
+<script type="text/javascript">
+            var x_umrah = null, y_umrah = null, caller = "";
+
+            $(document).on('click', '#btnUmrah', function () {
+                caller = 'umrah_r';
+                $("#searchResultUmrah").empty();
+                var searchTxt = $.trim($("#umrahText").val());
+
+                //$.getJSON("data/umrah.json", function (data) {
+                $.getJSON("http://intranet.jawhar.gov.my/umrah/getdata.php", function (data) {
+                    onSuccessUmrah(data, searchTxt)
+                });
+
+            });
+
+
+            function onSuccessUmrah(result, sTxt) {
+                if (result.Result == "OK") {
+                    var i = 0,
+                    found = 0,
+                    count = result.Records.length,
+                    theItem,
+                    flag = 'img/proj/kaabah.jpg';
+                    y_umrah = result;
+                    $('#searchResultUmrah').append('<li data-role="list-divider"> Senarai carian: </li>');
+                    for (i = 0; i < count; i++) {
+                        if (((result.Records[i][1]).toUpperCase()).search(sTxt.toUpperCase()) >= 0) {
+                            found++;
+                            //alert("String Found");
+                            theItem = theOrgUmrah(result.Records[i][0], result.Records[i][1], result.Records[i][3], result.Records[i][4], flag);
+                            $("#searchResultUmrah").append(theItem);
+                        }
+                        
+                    }
+
+                    if (found==0){
+                        $('#searchResultUmrah').append("<li>Carian tiada dalam senarai!!</li>");
+                    }
+
+                    $('#searchResultUmrah').listview().listview("refresh");
+                }
+                else {
+                    $('#searchResultUmrah').append("<li>Carian tiada dalam senarai!!</li>");
+                }
+            }
+
+            function theOrgUmrah(idx, name, tel, fax, flg) {
+
+                var li = '<li id="' + idx + '">';
+                li = li + '<a href="#umrahDetail" style="text-decoration: none;" data-id="' + idx + '" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">';
+                li = li + '<img src="' + flg + '" class="ui-thumbnail ui-thumbnail-circular" />';
+                li = li + '<h3>' + name + '</h3>';
+                li = li + '<p><small>Tel:' + tel + '</small> / <small> fax:' + fax + '</small></p>';
+                li = li + '</a>';
+                li = li + '</li>';
+
+                return li;
+            }
+
+            $(document).on('vclick', '#searchResultUmrah li a', function () {
+                x_umrah = $(this).attr('data-id');
+                //alert("id==" + x_umrah);
+                //$.mobile.changePage("#pg-umrah-detail", { transition: "pop", changeHash: false });
+
+                var count = y_umrah.Records.length;
+                for (i = 0; i < count; i++) {
+                    if (y_umrah.Records[i][0] == x_umrah) {
+
+                        $('#nama').html(y_umrah.Records[i][1]);
+                        $('#alamatUmrah').html(y_umrah.Records[i][2]);
+                        $('#phone').html(y_umrah.Records[i][3]);
+                        $('#fax').html(y_umrah.Records[i][4]);
+                        $('#website').html(y_umrah.Records[i][5]);
+                        $('#nota').html(y_umrah.Records[i][6]);
+
+                    }
+                }
+
+
+            });
+
+            
+
+
+
+
+
+</script>
+
+<script type="text/javascript">
+    $(document).on('vclick', '.tesis li a', function () {
+        new $.nd2Toast({
+            message: "Sila lawat www.jawhar.gov.my untuk maklumat lanjut",
+            ttl: 3000
+        });
+    });
+    $(document).on("pagebeforecreate", function (event) {
+        //alert("pagebeforecreate event fired!");
+    });
+
+    $(document).on("pageshow", "#khairat", function (event) {
+        var tab = 'li[data-tab="carian"]';      
+        var selected = $(tab).closest('.ui-btn-active');
+        $(selected).trigger("click");
+
+        $("#searchResult").empty();
+        $("#name2b").val("");
+    });
+
+    $(document).on("pageshow", "#iumrah", function (event) {
+        var tab = 'li[data-tab="carianUmrah"]';
+        var selected = $(tab).closest('.ui-btn-active');
+        $(selected).trigger("click");
+
+        $("#searchResultUmrah").empty();
+        $("#umrahText").val("");
+    });
+
+    $(document).on("pageshow", "#iwakaf", function (event) {
+        //alert("tst");
+        var tab = 'li[data-tab="hotel"]';
+        //var tab = tabs + ' a';
+
+        var selected = $(tab).closest('.ui-btn-active');
+        $(selected).trigger("click");
+
+    });
+ 
+    $(document).ready(function () {
+
+    });
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+        document.addEventListener("backbutton", function (e) {
+            if ($.mobile.activePage.is('#home')) {
+                e.preventDefault();
+                navigator.app.exitApp();
+            }
+            else {
+                navigator.app.backHistory()
+            }
+        }, false);
+
+    }
+</script>
+
+	</body>
+</html>
